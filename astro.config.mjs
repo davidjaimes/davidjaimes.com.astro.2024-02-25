@@ -7,8 +7,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   sitemap: true,
   site: "https://davidjaimes.com",
-  outDir: "public",
-  publicDir: "static",
   
   integrations: [react(), tailwind()]
 });
