@@ -8,5 +8,16 @@ export default defineConfig({
   sitemap: true,
   site: "https://davidjaimes.com",
   
-  integrations: [react(), tailwind()]
+  integrations: [tailwind({
+    config: {
+      applyBaseStyles: true
+    }
+  }), react()],
+  
+  markdown: {
+    shikiConfig: {
+      theme: 'github-dark-dimmed',
+      wrap: false
+    },
+  },
 });
