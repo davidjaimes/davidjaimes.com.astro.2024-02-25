@@ -12,11 +12,11 @@ const options = {
 
 function Search({ searchList }) {
   // User's input
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState([]);
 
   const fuse = new Fuse(searchList, options);
 
-  // Set a limit to the posts: 5
+  // Set a limit to the posts: 10
   const posts = fuse
     .search(query)
     .map((result) => result.item)

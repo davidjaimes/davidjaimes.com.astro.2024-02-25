@@ -27,16 +27,16 @@ const { title } = Astro.props;
 	@tailwind utilities;
 
     :global(.post-content h2) {
-        @apply text-2xl font-bold pb-6 pt-10 text-white
+        @apply text-2xl font-bold pb-6 pt-10 text-neutral-100
     }
     :global(.post-content p) {
-        @apply pb-6 font-normal leading-relaxed;
+        @apply pb-6 font-normal leading-relaxed text-neutral-400;
     }
 	:global(.post-content pre) {
 		@apply mb-6 p-4 rounded-lg text-xs bg-[#161b22] !important;
 	}
 	:global(.post-content ul) {
-		@apply list-disc list-outside pl-10
+		@apply list-disc list-outside pl-10 pb-6
 	}
 	:global(.post-content ol) {
 		@apply list-decimal list-outside pl-10
