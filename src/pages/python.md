@@ -2,7 +2,7 @@
 layout: ../layouts/post-layout.astro
 title: "Python: Setup and configure"
 date: "Feb 19, 2024"
-excerpt: Instructions for Apple M1 computer.
+excerpt: "Use the Miniforge distribution to install the Mamba package manager."
 ---
 
 ## Get Started
