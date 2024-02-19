@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/post-layout.astro
-title: Setup and configure Python
+title: "Python: Setup and configure"
 date: "Feb 19, 2024"
 excerpt: Instructions for Apple M1 computer.
 ---
