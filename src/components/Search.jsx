@@ -17,7 +17,7 @@ function Search({ searchList }) {
   const fuse = new Fuse(searchList, options);
 
   // Set a limit to the posts: 10
-  const posts = fuse
+  const posts = !query ? searchList : fuse
     .search(query)
     .map((result) => result.item)
     .slice(0, 10);
@@ -68,8 +68,8 @@ function Search({ searchList }) {
         />
       </div>
 
-      {query.length > 0 && (
-        <div className="mt-4 mb-6 text-white">
+      {query.length >= 0 && (
+        <div className="mt-4 mb-0 text-white">
           Found {posts.length} {posts.length === 1 ? "result" : "results"} for: <span className="text-pink-500">{query}</span>
         </div>
       )}
@@ -77,7 +77,7 @@ function Search({ searchList }) {
       <ul className="list-none">
         {posts &&
           posts.map((post) => (
-            <li className="pb-6">
+            <li className="pt-6 pb-6">
               <p className="text-xs text-[#b1bac4]">{post.frontmatter.date}</p>
               <a className="text-lg text-sky-500 hover:text-sky-700 hover:underline underline-offset-2" href={post.url}>{post.frontmatter.title}</a>
               <p className="text-sm text-[#b1bac4] pb-2">{post.frontmatter.excerpt}</p>
