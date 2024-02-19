@@ -63,7 +63,8 @@ function Search({ searchList }) {
 
                               focus:outline-none
                               focus:ring-sky-500
-                              focus:border-sky-500"
+                              focus:border-sky-500
+                              transition-all duration-500 transform focus:w-64"
           placeholder="Search ..."
         />
       </div>
@@ -77,7 +78,7 @@ function Search({ searchList }) {
       <ul className="list-none">
         {posts &&
           posts.map((post) => (
-            <li className="pt-6 pb-6">
+            <li className="pt-6">
               <p className="text-xs text-[#b1bac4]">{post.frontmatter.date}</p>
               <a className="text-lg text-sky-500 hover:text-sky-700 hover:underline underline-offset-2" href={post.url}>{post.frontmatter.title}</a>
               <p className="text-sm text-[#b1bac4] pb-2">{post.frontmatter.excerpt}</p>
