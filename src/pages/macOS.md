@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/post-layout.astro
-title: Setup and configure a macOS computer
+title: "macOS: Setup and configure"
 date: "Jun 30, 2023"
 excerpt: Instructions for Apple M1 computer.
 ---
