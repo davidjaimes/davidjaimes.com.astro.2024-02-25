@@ -68,7 +68,7 @@ function Search({ searchList }) {
         />
       </div>
 
-      {query.length >= 0 && (
+      {(
         <div className="mt-4 mb-0 text-white">
           Found {posts.length} {posts.length === 1 ? "result" : "results"} for: <span className="text-pink-500">{query}</span>
         </div>
