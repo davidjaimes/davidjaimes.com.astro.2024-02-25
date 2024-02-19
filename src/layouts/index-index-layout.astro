@@ -1,0 +1,15 @@
+---
+import IndexLayout from "./index-layout.astro";
+const { frontmatter } = Astro.props;
+---
+<style>
+	pre {border-radius: 10px;}
+</style>
+
+<IndexLayout title={frontmatter.title}>
+	<div class="max-w-4xl mx-auto px-4 md:px-6 sm:px-4 xs:px-6 lg:px-0 xl:px-0 py-4 text-[#b1bac4] bg-[#0d1117]">
+		<div class="post-content">
+			<slot/>
+		</div>
+	</div>
+</IndexLayout>
