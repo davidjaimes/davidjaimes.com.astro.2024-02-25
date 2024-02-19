@@ -2,7 +2,7 @@
 layout: ../layouts/post-layout.astro
 title: "macOS: Setup and configure"
 date: "Jun 30, 2023"
-excerpt: Instructions for Apple M1 computer.
+excerpt: Install Xcode, Homebrew, Oh My Zsh, iTerm2, Miniconda, Sublime Text, and Node.js.
 ---
 
 ## Hush Login
