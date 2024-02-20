@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/post-layout.astro
 title: "macOS: Setup and configure"
-date: "Jun 30, 2023"
+date: "Jan 01, 2024"
 excerpt: Install Xcode, Homebrew, Oh My Zsh, iTerm2, Miniconda, Sublime Text, and Node.js.
 ---
 
