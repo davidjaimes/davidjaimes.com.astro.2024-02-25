@@ -4,6 +4,8 @@ import Jumbotron from "../components/jumbotron.astro";
 
 const posts = await Astro.glob('../pages/*.md');
 import Search from '../components/Search';
+
+import {Content as IndexMarkdown} from "../components/index.md";
 ---
 
 <BaseLayout title="Home">
@@ -13,7 +15,7 @@ import Search from '../components/Search';
 		<Search client:load searchList={posts} class="pb-12"></Search>
 
 		<div class="post-content">
-			<slot/>
+			<IndexMarkdown />
 		</div>
 	</div>
 </BaseLayout>
