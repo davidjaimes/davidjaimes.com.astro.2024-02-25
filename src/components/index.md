@@ -25,7 +25,7 @@ pip install jupyterlab python-calamine xlsxwriter
 ```
 
 gcc version:
-```
+```none
 Apple clang version 15.0.0 (clang-1500.1.0.2.5)
 Target: arm64-apple-darwin23.3.0
 Thread model: posix
